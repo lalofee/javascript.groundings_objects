@@ -1,0 +1,69 @@
+//-------------------------------------------------------------------------------
+//          Grounding on Objects
+
+var cat = {
+	legs: 4,
+	name: "Tom",
+	color: "brown",
+};
+console.log("cat has " + cat.legs + " legs");
+console.log("cat has " + cat["legs"]);
+
+//
+
+var dog = {
+	eyes: 2,
+	age: 7,
+	race: "Bullterrier"
+};
+var ausgabe = "Our dog has " + dog.eyes + " eyes and is " + dog.age + " years old and he is a " + dog.race;
+document.getElementById("ausgabe6").innerHTML = ausgabe;
+
+//console.log("Our dog has " + dog.eyes + " eyes and is " + dog.age + " years old and he is a " + dog.race);
+
+//
+
+/*var cat2 = {
+	cat2["legs"] = "3";
+	cat2["name"] = "Reality";
+}
+console.log("The neighbours cat has " + cat2["legs"] + " and her name is " + cat2["name"]);*/
+
+//---------------------------
+
+var dinosaurs = [
+	{ name: "Tyrannosaurus Rex", period: "Late Cretaceous" },
+	{ name: "Stegosaurus", period: "Late Jurassic" },
+	{ name: "Plateosaurus", period: "Triassic" },
+];
+console.log(dinosaurs[0]);   // 0 gibt den ersten Wert aus
+
+console.log(dinosaurs[0]["name"]);    // gibt nur den Namen des ersten Dinosauriers aus
+
+console.log(dinosaurs[1].period);
+
+//------------------------------------------------------------------------------
+
+var Ana = {
+	name: "Ana Doe",
+	age: 25,
+	favouriteMusicians: ["Nirvana", "Dresden Dolls", "Tom Waits"],
+	haircolor: "Purple",
+	favouriteFood: ["Spaghetti", "Brownies"],
+}
+var Dave = {
+	name: "Dave Doodle",
+	age: 37,
+	favouriteMusicians: ["Holzhackerbuam", "Hansi Hinterseer", "Nico"],
+	haircolor: "Green",
+	favouriteFood: ["Schweinsbraten", "Käsenockerl"],
+}
+var Susi = {
+	name: "Susi Sorglos",
+	age: 79,
+	favouriteMusicians: "ACAB",
+	haircolor: "Blue",
+	favouriteFood: ["Karrots", "Water"]
+}
+var friends = [Ana, Dave, Susi];
+console.log(friends);
