@@ -1,5 +1,20 @@
-//-------------------------------------------------------------------------------
-//          Grounding on Objects
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object1</title>
+</head>
+<body>
+
+<div>
+	<span id=ausgabe1></span>
+	<br>
+	<span id=ausgabe2></span>
+	<br>
+	<span id=ausgabe3></span>
+</div>
+
+
+<script>
 
 var cat = {
 	legs: 4,
@@ -9,6 +24,8 @@ var cat = {
 console.log("cat has " + cat.legs + " legs");
 console.log("cat has " + cat["legs"]);
 
+document.getElementById("ausgabe1").innerHTML = "cat has " + cat.legs + " legs";
+
 //
 
 var dog = {
@@ -17,11 +34,9 @@ var dog = {
 	race: "Bullterrier"
 };
 var ausgabe = "Our dog has " + dog.eyes + " eyes and is " + dog.age + " years old and he is a " + dog.race;
-document.getElementById("ausgabe6").innerHTML = ausgabe;
+document.getElementById("ausgabe3").innerHTML = ausgabe;
 
 //console.log("Our dog has " + dog.eyes + " eyes and is " + dog.age + " years old and he is a " + dog.race);
-
-//
 
 /*var cat2 = {
 	cat2["legs"] = "3";
@@ -29,41 +44,19 @@ document.getElementById("ausgabe6").innerHTML = ausgabe;
 }
 console.log("The neighbours cat has " + cat2["legs"] + " and her name is " + cat2["name"]);*/
 
-//---------------------------
 
-var dinosaurs = [
-	{ name: "Tyrannosaurus Rex", period: "Late Cretaceous" },
-	{ name: "Stegosaurus", period: "Late Jurassic" },
-	{ name: "Plateosaurus", period: "Triassic" },
-];
-console.log(dinosaurs[0]);   // 0 gibt den ersten Wert aus
+</script>
 
-console.log(dinosaurs[0]["name"]);    // gibt nur den Namen des ersten Dinosauriers aus
+</body>
+</html>
 
-console.log(dinosaurs[1].period);
 
-//------------------------------------------------------------------------------
 
-var Ana = {
-	name: "Ana Doe",
-	age: 25,
-	favouriteMusicians: ["Nirvana", "Dresden Dolls", "Tom Waits"],
-	haircolor: "Purple",
-	favouriteFood: ["Spaghetti", "Brownies"],
-}
-var Dave = {
-	name: "Dave Doodle",
-	age: 37,
-	favouriteMusicians: ["Holzhackerbuam", "Hansi Hinterseer", "Nico"],
-	haircolor: "Green",
-	favouriteFood: ["Schweinsbraten", "Käsenockerl"],
-}
-var Susi = {
-	name: "Susi Sorglos",
-	age: 79,
-	favouriteMusicians: "ACAB",
-	haircolor: "Blue",
-	favouriteFood: ["Karrots", "Water"]
-}
-var friends = [Ana, Dave, Susi];
-console.log(friends);
+
+
+
+
+
+
+
+
